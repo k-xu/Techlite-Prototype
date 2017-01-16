@@ -1,0 +1,408 @@
+<html>
+	<head>
+		<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,300,300italic,600italic,400italic' rel='stylesheet' type='text/css'>
+
+		<title>Techlite: Mindware</title>
+		<style>
+			
+			
+			.body {
+				width: 100vw; height: vh;
+				background: white;
+				background-size: cover;
+				overflow: hidden;
+				}
+			
+			/* top */
+				
+			.topbar {
+				position: fixed;
+				left:0; top:0;
+				width: 100vw; min-width: 540px; height: 50px;
+				background: #00A9FF;
+				z-index: 1;
+				}
+				
+			.name {
+				float: left;
+				margin-left: 7vw; margin-top: 7px;
+				font-family: 'Open Sans', sans-serif;
+				font-weight: Semi-Bold; 
+				font-size: 25px;
+				color: white;
+				}
+			
+			.name_2 {
+				float: left;
+				margin-left: 10px; margin-top: 13px;
+				font-family: 'Open Sans', sans-serif;
+				font-weight: Normal;
+				font-size: 20px;
+				color: white;
+				}
+							
+			.misc {
+				float: right;
+				margin-right: 7vw; margin-top: 10px;
+				opacity: 0.3;
+				}
+				
+			.search {
+				float: right;
+				margin-right: 40px; margin-top: 14px;
+				}
+				
+				
+			/* content */
+			.article {
+				float: left;
+				margin-left: 6.5vw; margin-top:100px; margin-bottom: 100px;
+				width: 770; min-width: 700px; min-height: 800px;
+				background: white;
+				overflow: hidden;
+				z-index: 1;
+				}
+				
+			.article_title {
+				float: left;
+				margin-top: -8px;
+				color: black;
+				font-family: 'Open Sans', sans-serif;
+				font-weight: Semi-Bold;
+				font-size: 30px;
+				}
+				
+			.post_details {
+				float: left;
+				margin-top: -10px;
+				color: #9B9B9B;
+				font-family: 'Open Sans', sans-serif;
+				font-weight: Normal;
+				font-size: 13px;
+				}
+				
+			.post_details2 {
+				float: left;
+				margin-top: -10px; margin-left: 3px;
+				color: #9B9B9B;
+				font-family: 'Open Sans', sans-serif;
+				font-weight: Normal;
+				font-size: 13px;
+				}
+				
+			.likebutton {
+				float: left;
+				margin-left: 12px; margin-top: -10px;
+				opacity: 0.3;
+				transition: 0.1s all; 
+				}
+				
+			.likebutton:hover {
+				opacity: 0.7;
+				}
+			
+			.likebuttonclicked {
+				opacity: 1;
+				}
+			
+			.articleimage {
+				float: left;
+				}
+				
+				
+			/* written article */
+			
+			.article_body p {
+				float: left;
+				margin-bottom: 6px;
+				color: black;
+				font-family: 'Open Sans', sans-serif;
+				font-weight: Normal;
+				font-size: 16px;
+				line-height: 26px;
+				}
+					
+				
+			.article_body h3 {
+				float: left;
+				margin-top: 60px; margin-bottom: 1px;
+				color: black;
+				font-family: 'Open Sans', sans-serif;
+				font-weight: Semi-Bold;
+				font-size: 23px;
+				clear: both;
+				}
+				
+			.article_body img {
+				float: left;
+				margin-top: 28px; margin-bottom: 10px;
+				}
+				
+			
+			
+			
+				
+			/* newsfeed */
+			
+			a {
+				text-decoration: none;
+				color: black;
+				}
+				
+			a:hover {
+				color: #00A9FF;
+				cursor:pointer;
+				transition: 0.1s;
+				}
+					
+			.newsfeed {
+				float: left;
+				right: 7vw; margin-top: 100px;
+				margin-left: 60px;
+				width: 23vw; height: vh;
+				background: white;
+				overflow: hidden;
+				}	
+				
+			.line1 {
+				float: left;
+				width: 23vw; height: 2px;
+				background: #00A9FF;
+				}
+				
+			.line2 {
+				float:left;
+				float: left;
+				margin-top: 15px;
+				margin-bottom: 10px;
+				width: 23vw; height: 1px;
+				background: #DCDBDC;
+				}
+				
+			.section h3 {
+				float: left;
+				margin-top: 12px;
+				font-family: 'Open Sans', sans-serif;
+				font-weight: Semi-Bold;
+				font-size: 20px;
+				}
+				
+			.newscategory1 {
+				float: left;
+				margin-top: 0px;
+				margin-bottom: -68px;
+				font-family: 'Open Sans', sans-serif;
+				font-weight: Normal;
+				font-size: 13px;
+				color: #9B9B9B;
+				clear:both;
+				}
+			
+			.newstitle1 {
+				float: left;
+				width: 23vw; height: 20px;
+				margin-top: 22px;
+				font-family: 'Open Sans', sans-serif;
+				font-weight: Normal;
+				font-size: 13px;
+				}
+				
+			.newscategory2 {
+				float: left;
+				margin-top: 0px;
+				margin-bottom: -68px;
+				font-family: 'Open Sans', sans-serif;
+				font-weight: Normal;
+				font-size: 13px;
+				color: #9B9B9B;
+				clear:both;
+				}
+			
+			.newstitle2 {
+				float: left;
+				width: 23vw; height: 20px;
+				margin-top: 22px;
+				font-family: 'Open Sans', sans-serif;
+				font-weight: Normal;
+				font-size: 13px;
+				}
+				
+			.newscategory3 {
+				float: left;
+				margin-top: 0px;
+				margin-bottom: -68px;
+				font-family: 'Open Sans', sans-serif;
+				font-weight: Normal;
+				font-size: 13px;
+				color: #9B9B9B;
+				clear:both;
+				}
+			
+			.newstitle3 {
+				float: left;
+				width: 23vw; height: 20px;
+				margin-top: 22px;
+				font-family: 'Open Sans', sans-serif;
+				font-weight: Normal;
+				font-size: 13px;
+				color: #00A9FF;
+				}	
+				
+			.newscategory4 {
+				float: left;
+				margin-top: 0px;
+				margin-bottom: -68px;
+				font-family: 'Open Sans', sans-serif;
+				font-weight: Normal;
+				font-size: 13px;
+				color: #9B9B9B;
+				clear:both;
+				}
+			
+			.newstitle4 {
+				float: left;
+				width: 23vw; height: 20px;
+				margin-top: 22px;
+				font-family: 'Open Sans', sans-serif;
+				font-weight: Normal;
+				font-size: 13px;
+				}
+				
+				
+			.newscategory5 {
+				float: left;
+				margin-top: 0px;
+				margin-bottom: -68px;
+				font-family: 'Open Sans', sans-serif;
+				font-weight: Normal;
+				font-size: 13px;
+				color: #9B9B9B;
+				clear:both;
+				}
+			
+			.newstitle5 {
+				float: left;
+				width: 23vw; height: 20px;
+				margin-top: 22px; margin-bottom: 70px;
+				font-family: 'Open Sans', sans-serif;
+				font-weight: Normal;
+				font-size: 13px;
+				}	
+				
+			.textbox {
+				float: left;
+				width: 22vw; height: 30px;
+				border: 1px solid #D8D8D8;
+				border-radius: 5px;
+				text-decoration: none;
+				}
+			
+			.textbox p {
+				border: 0px;
+				float: left;
+				margin-left: 10px; margin-top: 5px;
+				font-family: 'Open Sans', sans-serif;
+				font-weight: Normal;
+				font-size: 13px;
+				color: #D8D8D8;
+				}
+				
+				
+		</style>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+		
+	</head>
+	
+	<body>
+		<!-- top -->
+		<div class="topbar">
+			<h2 class="name">TECHLITE</h2>
+			<h2 class="name_2">mindware</h2>
+			<div class="misc"><img src="http://sharpinsurance.ca/images/menu-collapse.png" height="30px" width="30px"></div>
+			<div class="search"><img src="http://findicons.com/files/icons/1389/g5_system/32/toolbar_find.png" height="21px" width="21px"></div>	
+		</div>
+		
+		<!-- content -->
+		<div class="article">
+			<h2 class="article_title">New mindware extension prompts hourly mental static for new age spirituality</h2>
+			<p class="post_details">Alicia Chen | 21 April, 2050, 2.06PM</p>
+			<div class="likebutton"><img src="http://iconshow.me/media/images/ui/ios7-icons/png/512/thumbsup.png" height="16px" width="16px"></div>
+			
+			
+			<p class="post_details2">8.1k</p>
+			<div class="articleimage"><img src="http://www.ktu.edu.tr/dosyalar/09_00_00_4f080.jpg" width="770"></div>
+			<div class="article_body">
+				<p>Following up on a recent drive to promote mindfulness and relaxation in the technological world of mindware, Switzerland-based design studio Goodlight has released a new extension that periodically delivers mental "static" to the brain. This static is not referring to the visual and auditory noise that we are familiar with on malfunctioning televisions and radios; rather, it plays on the meditative concept of static and integrates the surreal quality of blissful emptiness into compact pulses of brainwave signals, which travel down conventional mindware channels and disrupt the stream of otherwise continuous brain activity. Its fundamental principle is based on the recent scientific discovery that protracted periods of a specific type of mental silence, when employed faithfully and administered without stress, could vastly improve psychological wellbeing and simultaneously revitalize overworked mindware neural pathways.</p>
+				<p>The extension, called Caesura, is compatible with any registered mindware interface and can easily be programmed to deliver customized static at specific, self-determined intervals. Various sliders that come with the interface allow users to dictate what type and level of "noise" they want, including the "opacity" (intensity) of produced emptiness and the flavor of silence tinted by mood prompts that influence the serotonin centers of the brain. Caesura is now readily downloadable on all web platforms, and may soon be absorbed into a performance art project which Goodlight promises would tie concept and function into an elegant exercise of spiritual wellbeing in postmodern society.</p>			
+			</div>
+		</div>
+		
+		
+		
+		
+		
+		
+		
+		<!-- newsfeed -->
+		<div class="newsfeed">
+			<div class="line1">
+				<div></div>
+			</div>
+			
+			<div class="section">
+				<h3>LATEST NEWS</h3>
+			</div>
+			
+			<!--news items-->
+			<p class="newscategory1">Industry</p>
+			<p class="newstitle1"><a href="file:///Users/Kendra/Desktop/Prototype%20Techlite%20Site/Techlite%20Article%20Site.html">Into the mindscape: a brief overview of the world's three biggest mindware giants</a></p>
+			
+			<div class="line2"></div>
+			
+			<p class="newscategory2">Security</p>
+			<p class="newstitle2"><a href="file:///Users/Kendra/Desktop/Prototype%20Techlite%20Site/child_pages/magpie_hacker.html">Magpie hacker caught and jailed for
+penetrating new Quartz Intel V2 system</a></p>
+			
+			<div class="line2"></div>
+			
+			<p class="newscategory3">Design</p>
+			<p class="newstitle3">New mindware extension prompts hourly
+mental static for new age spirituality</p>
+
+			<div class="line2"></div>
+			
+			<p class="newscategory4">Activism</p>
+			<p class="newstitle4"><a href="file:///Users/Kendra/Desktop/Prototype%20Techlite%20Site/child_pages/activism_thescoop.html">The Scoop attacks the convention of brainwiring with brutal cynicism</a></p>
+
+			<div class="line2"></div>	
+			
+			<p class="newscategory5">Community</p>
+			<p class="newstitle5"><a href="file:///Users/Kendra/Desktop/Prototype%20Techlite%20Site/child_pages/community_brainchild.html">Open-source platforms like Brainchild offer new variations of MEM usage</a></p>
+		
+			
+		<!-- subscribe section -->
+			<div class="line1">
+				<div></div>
+			</div>
+			
+			<div class="section">
+				<h3>SUBSCRIBE FOR BENEFITS</h3>
+			</div>
+			
+			<div class="textbox" contenteditable="true"><p>e-mail address</p></div>
+			
+		</div>
+
+
+
+		<!-- SCRIPTS -->
+		<script>
+			$(".likebutton").click(function() {
+				$(this).toggleClass("likebuttonclicked");
+			});
+		</script>
+
+
+
+	</body>
+</html>
